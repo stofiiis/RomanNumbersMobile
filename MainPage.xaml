@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RomanNumberConverter.MainPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <StackLayout Padding="20" Spacing="10">
+        <Label Text="Převodník čísel na římská čísla"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="NumberEntry"
+               Placeholder="Zadejte číslo (1 - 3999)"
+               Keyboard="Numeric" />
+
+        <Button Text="Převést"
+                Clicked="OnConvertButtonClicked" />
+
+        <Label x:Name="ResultLabel"
+               FontSize="18"
+               HorizontalOptions="Center"
+               TextColor="Black" />
+    </StackLayout>
+</ContentPage>
